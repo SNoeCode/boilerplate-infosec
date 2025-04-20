@@ -16,5 +16,17 @@
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@types/helmet": "^0.0.48"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SNoeCode/boilerplate-infosec.git"
+	},
+	"author": "Shanna Noe",
+	"bugs": {
+		"url": "https://github.com/SNoeCode/boilerplate-infosec/issues"
+	},
+	"homepage": "https://github.com/SNoeCode/boilerplate-infosec#readme"
 }
