@@ -1,24 +1,35 @@
+// const express = require('express');
+// const helmet = require('helmet')
+// const app = express();
+// app.use(helmet.hidePoweredBy())
+
+
+// helmet.frameguard({action: 'deny'})
+
+
+
+
+
+// // app.get('/', (req, res) => {
+// //   res.send('Security measures applied');
+// // });
+
+
+
+
+
 const express = require('express');
-const helmet = require('helmet')
-const app = express();
-app.use(helmet.hidePoweredBy())
+const helmet = require('helmet');
 
+const app = express(); // Initialize the Express app
 
-
-
-
-
-
+app.use(helmet.frameguard({ action: 'deny' })); // Apply frameguard with 'deny' option
 
 app.get('/', (req, res) => {
-  res.send('Security measures applied');
+  res.send('Security middleware applied');
 });
 
-
-
-
-
-
+module.exports = app; // Export the app for testing if needed
 
 
 
