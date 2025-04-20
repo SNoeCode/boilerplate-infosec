@@ -10,6 +10,9 @@ app.use(helmet.hidePoweredBy())
 
 
 
+app.get('/', (req, res) => {
+  res.send('Security measures applied');
+});
 
 
 
